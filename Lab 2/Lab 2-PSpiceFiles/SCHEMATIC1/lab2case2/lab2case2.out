@@ -1,0 +1,152 @@
+
+**** 02/17/22 22:12:05 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab2case2"  [ C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 2\lab 2-pspicefiles\schematic1\lab2case2.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab2case2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab 2-pspicefiles/lab 2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Harry\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 1ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB 2
+M_M1         N00123 N00123 N00156 N00156 MbreakP           
+M_M2         N00127 N00123 N00156 N00156 MbreakP           
+M_M3         N00123 N00251 N00457 N00457 Mbreakn           
+M_M4         N00127 N00251 N00457 N00457 Mbreakn           
+V_V1         N00156 0 5V
+M_M5         N00457 N01163 0 0 Mbreakn           
+V_V2         N01163 0 5V
+V_V3         N00251 0  
++PULSE 0 5 0 .1u .1u .4u 1u
+
+**** RESUMING lab2case2.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file "C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 2\lab 2-pspicefiles\lab 2.lib" has changed since index file "lab 2.ind" was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Thu Feb 17 21:57:03 2022 to Thu Feb 17 22:08:22 2022.
+
+INFO(ORPSIM-15422): Making new index file "lab 2.ind" for library file "lab 2.lib".
+
+Index has 2 entries from 1 file(s).
+
+**** 02/17/22 22:12:05 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab2case2"  [ C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 2\lab 2-pspicefiles\schematic1\lab2case2.
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakP         Mbreakn         
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L   10.000000E-06   10.000000E-06 
+           W   60.000000E-06   60.000000E-06 
+         VTO   -1.5             2            
+          KP   55.000000E-06  111.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA     .04             .01         
+          IS   16.640000E-12   16.640000E-12 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+         CBD    4.000000E-12    2.000000E-12 
+         CBS    4.000000E-12    2.000000E-12 
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO  200.000000E-15  100.000000E-15 
+        CGDO  200.000000E-15  100.000000E-15 
+        CGBO    0               0            
+         TOX    1.200000E-06    1.200000E-06 
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 02/17/22 22:12:05 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab2case2"  [ C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 2\lab 2-pspicefiles\schematic1\lab2case2.
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00123)    3.4999 (N00127)    3.4999 (N00156)    5.0000 (N00251)    0.0000     
+
+(N00457) 20.16E-09 (N01163)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.028E-11
+    V_V2         0.000E+00
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.01E-10  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/17/22 22:12:05 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab2case2"  [ C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 2\lab 2-pspicefiles\schematic1\lab2case2.
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       12.28
+  Total job time (using Solver 1)   =         .03
+
